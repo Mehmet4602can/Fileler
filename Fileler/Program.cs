@@ -1,5 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Fileler.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(
+        "Server=localhost;Database=FilelerDB;Trusted_Connection=True;TrustServerCertificate=True;"
+    ));
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
