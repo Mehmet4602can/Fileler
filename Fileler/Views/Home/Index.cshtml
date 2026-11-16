@@ -1,8 +1,139 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
+    ViewData["Title"] = "Ana Sayfa";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HalıSaha | Rezervasyon</title>
+    <link rel="stylesheet" href="~/css/home.css" />
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="/" class="logo">
+            <span class="logo-icon">⚽</span>
+            HalıSaha<span>Rezervasyon</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="/" class="active">Ana Sayfa</a>
+            <a href="#sahalar">Sahalar</a>
+            <a href="#nasil-calisir">Nasıl Çalışır?</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+
+        <div class="nav-buttons">
+            <a href="/Account/Login" class="login-btn">Giriş Yap</a>
+            <a href="/Account/Register" class="register-btn">Kayıt Ol</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-tag">⚡ Maçın keyfi burada başlar</span>
+
+                <h1>
+                    Halı Saha Keyfini
+                    <span>Birlikte Yaşayın!</span>
+                </h1>
+
+                <p>
+                    Size en yakın halı sahaları keşfedin.
+                    Müsait saatleri görüntüleyin ve saniyeler
+                    içerisinde rezervasyonunuzu oluşturun.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#sahalar" class="primary-btn">
+                        Hemen Saha Bul <span>→</span>
+                    </a>
+                    <a href="#nasil-calisir" class="secondary-btn">
+                        Nasıl Çalışır?
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>Kolay</strong>
+                        <small>Rezervasyon</small>
+                    </div>
+                    <div>
+                        <strong>Hızlı</strong>
+                        <small>Saha Arama</small>
+                    </div>
+                    <div>
+                        <strong>7/24</strong>
+                        <small>Online Erişim</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="nasil-calisir">
+            <div class="feature-card">
+                <span>⚡</span>
+                <div>
+                    <h3>Hızlı Rezervasyon</h3>
+                    <p>İstediğiniz saati kolayca seçin.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <span>📍</span>
+                <div>
+                    <h3>Yakın Sahalar</h3>
+                    <p>Size uygun sahaları keşfedin.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <span>📅</span>
+                <div>
+                    <h3>Kolay Takvim</h3>
+                    <p>Müsait saatleri görüntüleyin.</p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <span>⚽</span>
+                <div>
+                    <h3>Takımını Topla</h3>
+                    <p>Arkadaşlarınla maçını planla.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-fields" id="sahalar">
+            <div class="section-heading">
+                <div>
+                    <span>KEŞFETMEYE BAŞLA</span>
+                    <h2>Popüler Halı Sahalar</h2>
+                </div>
+                <a href="#sahalar">Tüm Sahaları Gör →</a>
+            </div>
+
+            <div class="empty-fields">
+                <div class="empty-icon">🏟️</div>
+                <h3>Sahalar Çok Yakında Burada!</h3>
+                <p>
+                    Sisteme kayıtlı halı sahaları burada
+                    görüntüleyebileceksiniz.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer id="iletisim">
+        <a href="/" class="logo">
+            ⚽ HalıSaha<span>Rezervasyon</span>
+        </a>
+        <p>© 2026 HalıSaha Rezervasyon. Tüm hakları saklıdır.</p>
+    </footer>
+
+</body>
+</html>
